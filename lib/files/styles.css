@@ -1,0 +1,100 @@
+:root {
+        --groupborder: 3px;
+        --gridline: 1px;
+        --cell: 68px;
+      }
+      #g {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border: var(--groupborder) solid black;
+      }
+      .gr {
+        display: flex;
+        flex-direction: row;
+      }
+      .gc {
+        height: var(--cell);
+        width: var(--cell);
+        transition: background-color 0.1s;
+        font-weight: bold;
+        font-size: 40px;
+        border: var(--gridline) solid black;
+      }
+      .writeable.written {
+        color: blue;
+      }
+      .b-0 {
+        border-top-width: var(--groupborder);
+        border-top-color: black;
+      }
+      .b-1 {
+        border-right-width: var(--groupborder);
+        border-right-color: black;
+      }
+      .b-2 {
+        border-bottom-width: var(--groupborder);
+        border-bottom-color: black;
+      }
+      .b-3 {
+        border-left-width: var(--groupborder);
+        border-left-color: black;
+      }
+      .gc[group="a"], .gc[group="c"], .gc[group="f"] {
+        background-color: #fff;
+      }
+      .gc[group="b"], .gc[group="e"] {
+        background-color: #e0e0e0;
+      }
+      .gc[group="d"] {
+        background-color: #c0c0c0;
+      }
+      .gc.hover {
+        background-color: pink;
+      }
+      .gc.active-group {
+        background-color: #DCEFFF;
+      }
+      .gc.active-cell {
+        background-color: #FFB600;
+      }
+      .gc.hint {
+        background-color: #3DC662;
+      }
+      button.btn-outline-black-lg {
+        --bs-btn-color: #000;
+        --bs-btn-border-color: #000;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #000;
+        --bs-btn-hover-border-color: #000;
+        --bs-btn-focus-shadow-rgb: 33,37,41;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #000;
+        --bs-btn-active-border-color: #000;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #777;
+        --bs-btn-disabled-bg: #eee;
+        --bs-btn-disabled-border-color: #777;
+        --bs-gradient: none;
+        border: 2px solid #000;
+        font-weight: bold;
+        font-size: 26px;
+      }
+      button.btn-outline-black {
+        --bs-btn-color: #000;
+        --bs-btn-border-color: #000;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #000;
+        --bs-btn-hover-border-color: #000;
+        --bs-btn-focus-shadow-rgb: 33,37,41;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #000;
+        --bs-btn-active-border-color: #000;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #777;
+        --bs-btn-disabled-bg: #eee;
+        --bs-btn-disabled-border-color: #777;
+        --bs-gradient: none;
+        border: 2px solid #000;
+        font-weight: bold;
+      }
